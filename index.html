@@ -14,8 +14,7 @@
     <header class="main-header">
         <div class="container nav-container">
             <div class="logo">
-                <span class="logo-name">Duarte Eliott</span>
-                <span class="logo-dot">.</span>
+                <span class="logo-name">Duarte Eliott</span><span class="logo-dot">.</span>
             </div>
             <nav>
                 <ul class="nav-links">
@@ -36,11 +35,11 @@
                     <h1>Développer le réseau de demain.</h1>
                     <p class="hero-subtitle">Étudiant en BUT Réseaux & Télécommunications — Parcours [Ta Spécialité]</p>
                     <div class="hero-description">
-                        <p><strong>Objectif de ce portfolio :</strong> Illustrer ma progression professionnelle. Ce support remplace le rapport classique et met en lumière la manière dont j'articule les apprentissages de l'IUT avec la réalité du terrain en entreprise.</p>
+                        <p><strong>Objectif de ce portfolio :</strong> Illustrer ma progression professionnelle en articulant les apprentissages de l'IUT avec la réalité du terrain en entreprise.</p>
                     </div>
                 </div>
                 <div class="hero-image-container">
-                    <img src="https://via.placeholder.com/400x450" alt="Portrait de [Ton Nom]" class="hero-img">
+                    <img src="images/ta-photo.jpg" alt="Portrait" class="hero-img" style="background:#e2e8f0; width:100%; height:400px; display:block; object-fit:cover;">
                     <div class="img-backdrop"></div>
                 </div>
             </div>
@@ -53,21 +52,19 @@
                     <div class="card">
                         <div class="card-icon">🏢</div>
                         <h3>L'Entreprise</h3>
-                        <p><strong>Nom :</strong> [Nom de l'entreprise]</p>
-                        <p><strong>Secteur :</strong> [Ex: Intégrateur de solutions IT]</p>
-                        <p><strong>Envergure :</strong> [Ex: 200 collaborateurs, rayonnement national]</p>
+                        <p><strong>Nom :</strong> [Nom Entreprise]</p>
+                        <p><strong>Secteur :</strong> [Secteur]</p>
                     </div>
                     <div class="card">
                         <div class="card-icon">🎯</div>
                         <h3>Mon Rôle</h3>
-                        <p><strong>Service :</strong> [Ex: DSI - Pôle Infrastructure]</p>
-                        <p><strong>Missions :</strong> [Ex: Maintien en condition opérationnelle et assistance utilisateur de niveau 2].</p>
-                        <p><strong>Évolution :</strong> Gain d'autonomie progressif sur la gestion des tickets critiques.</p>
+                        <p><strong>Service :</strong> DSI - Pôle Infrastructure</p>
+                        <p>Gain d'autonomie progressif sur la gestion des incidents.</p>
                     </div>
                     <div class="card">
                         <div class="card-icon">🚀</div>
-                        <h3>Projet Professionnel</h3>
-                        <p>Cette expérience conforte mon ambition de devenir <strong>[Métier visé]</strong>. L'entreprise m'offre un cadre idéal pour développer mes compétences en [Compétence clé].</p>
+                        <h3>Projet</h3>
+                        <p>Cette expérience conforte mon ambition de devenir <strong>[Métier visé]</strong>.</p>
                     </div>
                 </div>
             </div>
@@ -76,78 +73,50 @@
         <section id="missions" class="section-white">
             <div class="container">
                 <h2 class="section-title">Missions Significatives</h2>
+                <p class="section-intro">Cliquez sur une mission pour accéder au détail (contexte, tâches, preuves et analyse réflexive).</p>
                 
-                <article class="mission-card">
-                    <div class="mission-header">
-                        <div class="mission-title-group">
-                            <h3>Migration de l'architecture VLAN (Site distant)</h3>
-                            <span class="mission-date">Mai - Juin 202X</span>
-                        </div>
-                    </div>
+                <div class="mission-grid">
+                    <a href="mission1.html" class="mission-summary-card">
+                        <span class="mission-date">Mai - Juin 202X</span>
+                        <h3>Migration de l'architecture VLAN</h3>
+                        <p>Refonte complète de l'adressage et des VLANs pour isoler le trafic VoIP du trafic Data sur un site distant.</p>
+                        <span class="read-more">Voir le détail &rarr;</span>
+                    </a>
 
-                    <div class="mission-body">
-                        <div class="mission-column">
-                            <h4>Contexte & Objectifs</h4>
-                            <p>Dans le cadre de la modernisation du réseau, le site de [Ville] nécessitait une refonte complète de son adressage et de ses VLANs pour isoler le trafic VoIP du trafic Data.</p>
-                            
-                            <h4>Déroulé & Tâches</h4>
-                            <ul class="task-list">
-                                <li>Cartographie du réseau existant.</li>
-                                <li>Création du plan d'adressage IP.</li>
-                                <li>Configuration des commutateurs (Cisco Catalyst).</li>
-                                <li>Recette technique avec les utilisateurs.</li>
-                            </ul>
-                        </div>
+                    <a href="mission2.html" class="mission-summary-card">
+                        <span class="mission-date">Sept - Oct 202X</span>
+                        <h3>Déploiement Pare-feu Fortinet</h3>
+                        <p>Mise en place et configuration de règles de filtrage pour sécuriser l'accès internet d'un nouveau bâtiment.</p>
+                        <span class="read-more">Voir le détail &rarr;</span>
+                    </a>
 
-                        <div class="mission-column bg-gray rounded-box">
-                            <h4>Apprentissages Critiques (AC)</h4>
-                            <div class="tags">
-                                <span class="tag">AC11.1 - Architecture Locale</span>
-                                <span class="tag">AC11.3 - Paramétrage Équipements</span>
-                            </div>
-
-                            <h4>Analyse Réflexive</h4>
-                            <p><strong>Acquis :</strong> J'ai compris l'importance d'une procédure de rollback (retour en arrière) en cas d'échec lors d'une mise en production.</p>
-                            <p><strong>Difficultés :</strong> Une boucle de routage a ralenti le réseau lors des premiers tests. J'ai dû analyser les trames avec Wireshark pour isoler le problème.</p>
-                            <p><strong>Autoévaluation :</strong> Je me sens désormais autonome sur la configuration de niveau 2, mais je dois encore me perfectionner sur le diagnostic à chaud.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="mission-footer">
-                        <h4>Traces & Livrables</h4>
-                        <p class="trace-text">Schéma topologique validé par le DSI et extraits de configuration (disponibles sur demande).</p>
-                    </div>
-                </article>
+                    <a href="mission3.html" class="mission-summary-card">
+                        <span class="mission-date">Nov - Déc 202X</span>
+                        <h3>Supervision sous Centreon</h3>
+                        <p>Intégration de nouveaux équipements réseau dans l'outil de supervision et création d'alertes personnalisées.</p>
+                        <span class="read-more">Voir le détail &rarr;</span>
+                    </a>
                 </div>
+            </div>
         </section>
 
         <section id="bilan" class="section-light">
             <div class="container">
                 <h2 class="section-title">Synthèse des Compétences</h2>
-                <p class="section-intro">Cette analyse croisée permet de mesurer l'impact de mon alternance sur la validation des compétences du référentiel BUT.</p>
-
                 <div class="table-container">
                     <table class="styled-table">
                         <thead>
                             <tr>
                                 <th>Compétence BUT R&T</th>
-                                <th>Apports Théoriques (IUT)</th>
-                                <th>Mise en Pratique (Entreprise)</th>
-                                <th>Axes de Progression</th>
+                                <th>Apports IUT</th>
+                                <th>Mise en Pratique Entreprise</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>Administrer les réseaux</strong><br><em>(Compétence 1)</em></td>
-                                <td>Protocoles de routage dynamique (OSPF), concepts IPv6.</td>
-                                <td>Déploiement sur du matériel réel, gestion des interruptions de service.</td>
-                                <td>Améliorer ma rapidité d'exécution en ligne de commande (CLI).</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Connecter les entreprises</strong><br><em>(Compétence 2)</em></td>
-                                <td>Théorie des liaisons WAN et fibres optiques.</td>
-                                <td>Supervision des liens opérateurs via Centreon.</td>
-                                <td>Approfondir mes connaissances sur les technologies SD-WAN.</td>
+                                <td><strong>Administrer les réseaux</strong></td>
+                                <td>OSPF, IPv6.</td>
+                                <td>Déploiement sur matériel réel.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -158,9 +127,8 @@
 
     <footer class="main-footer">
         <div class="container">
-            <p>© 2026 - Portfolio Professionnel de [Ton Nom] | BUT Réseaux & Télécommunications</p>
+            <p>© 2026 - Portfolio Professionnel de [Ton Nom]</p>
         </div>
     </footer>
-
 </body>
 </html>

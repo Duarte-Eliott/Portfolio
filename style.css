@@ -326,4 +326,136 @@ h1, h2, h3, h4 {
     padding: 15px 20px;
 }
 
-.styled-table tbody tr {
+/* --- NOUVEAUTÉS POUR LE MULTIPAGE (MISSIONS) --- */
+
+/* Grille des cartes sur l'accueil */
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Carte cliquable */
+.mission-summary-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-white);
+    padding: 35px 30px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border-color);
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.mission-summary-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent-color);
+}
+
+.mission-summary-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.mission-summary-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    flex-grow: 1; /* Pousse le lien "Voir le détail" vers le bas */
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* Page détail de la mission */
+.page-mission {
+    padding: 120px 0 80px 0; /* Compense le header fixe */
+}
+
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 30px;
+    transition: color 0.2s;
+}
+
+.btn-back:hover {
+    color: var(--accent-color);
+}
+
+.mission-detail-card {
+    background: var(--bg-white);
+    border-radius: var(--radius);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+}
+
+.mission-detail-header {
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+    padding: 50px;
+}
+
+.mission-detail-header h1 {
+    color: var(--bg-white);
+    font-size: 2.5rem;
+    margin: 10px 0 20px 0;
+}
+
+.mission-detail-header .mission-date {
+    color: #94a3b8;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mission-detail-body {
+    padding: 50px;
+}
+
+.content-block {
+    margin-bottom: 40px;
+}
+
+.content-block:last-child {
+    margin-bottom: 0;
+}
+
+.content-block h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--bg-light);
+}
+
+.bg-gray {
+    background-color: var(--bg-light);
+}
+
+.proof-container {
+    background-color: var(--bg-light);
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.caption {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-top: 10px;
+    font-style: italic;
+}
