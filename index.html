@@ -1,184 +1,166 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio BUT R&T - [Ton Nom]</title>
+    <title>Portfolio Professionnel | BUT R&T</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="logo">PORTFOLIO R&T</div>
-        <ul class="nav-links">
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#entreprise">L'Entreprise</a></li>
-            <li><a href="#missions">Missions & AC</a></li>
-            <li><a href="#bilan">Bilan Compétences</a></li>
-        </ul>
-    </nav>
-
-    <section id="accueil" class="hero">
-        <div class="hero-content">
-            <div class="profile-img-container">
-                <img src="https://via.placeholder.com/150" alt="Photo de profil" class="profile-img">
+    <header class="main-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-name">Duarte Eliott</span>
+                <span class="logo-dot">.</span>
             </div>
-            <h1>[Ton Prénom] [Ton Nom]</h1>
-            <h2>Alternant en BUT Réseaux & Télécommunications</h2>
-            <p class="intro-text">
-                Bienvenue sur mon portfolio d'alternance. Ce site retrace mon parcours au sein de l'entreprise <strong>[Nom de l'entreprise]</strong>. 
-                Il a pour but de présenter mes missions opérationnelles, d'analyser ma montée en compétence et de démontrer ma capacité à apprendre dans l'action.
-            </p>
-            <a href="#missions" class="btn">Voir mes missions</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#accueil">Présentation</a></li>
+                    <li><a href="#entreprise">L'Entreprise</a></li>
+                    <li><a href="#missions">Missions</a></li>
+                    <li><a href="#bilan">Bilan Compétences</a></li>
+                </ul>
+            </nav>
         </div>
-    </section>
+    </header>
 
-    <section id="entreprise" class="container">
-        <h2 class="section-title">Contexte Professionnel</h2>
-        
-        <div class="company-grid">
-            <div class="card company-info">
-                <h3>L'Entreprise d'Accueil</h3>
-                <p><strong>Nom :</strong> [Nom Entreprise]</p>
-                <p><strong>Secteur :</strong> [Ex: Opérateur Télécom, ESN, Industrie...]</p>
-                <p><strong>Activité :</strong> [Description courte de ce que fait l'entreprise]</p>
-                <p><strong>Mon Service :</strong> [Nom de ton service]</p>
-                <p><strong>Positionnement :</strong> [Explique ici ta place dans l'organigramme]</p>
-            </div>
-
-            <div class="card company-role">
-                <h3>Mon Rôle & Évolution</h3>
-                <p><strong>Missions principales :</strong> [Liste succincte]</p>
-                <p><strong>Niveau de responsabilité :</strong> [Ex: Accompagné au début, puis autonome sur...]</p>
-                <div class="projection">
-                    <h4>Projection Professionnelle</h4>
-                    <p>
-                        Cette alternance s'inscrit dans mon projet de devenir [Nom du métier visé, ex: Administrateur Réseaux]. 
-                        Elle me permet de développer des compétences clés en [Lister 2-3 compétences techniques ou humaines].
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="missions" class="container">
-        <h2 class="section-title">Missions & Analyse Réflexive</h2>
-        <p class="section-subtitle">Chaque mission est une opportunité de valider des Apprentissages Critiques (AC).</p>
-
-        <article class="mission-card">
-            <header class="mission-header">
-                <h3>Mission 1 : [Intitulé de la mission, ex: Déploiement de VLANs]</h3>
-                <span class="date">[Période, ex: Octobre - Novembre]</span>
-            </header>
-
-            <div class="mission-body">
-                <div class="mission-part">
-                    <h4>Contexte & Objectifs</h4>
-                    <ul>
-                        <li><strong>Enjeu :</strong> [Pourquoi cette mission ? Ex: Sécuriser le réseau interne]</li>
-                        <li><strong>Acteurs :</strong> [Avec qui ? Tuteur, DSI, Clients]</li>
-                        <li><strong>Contraintes :</strong> [Ex: Pas d'interruption de service]</li>
-                    </ul>
-                </div>
-
-                <div class="mission-part">
-                    <h4>Réalisation</h4>
-                    <p>[Description chronologique des actions]</p>
-                    <p><strong>Outils :</strong> [Wireshark, Cisco Packet Tracer, Ansible...]</p>
-                </div>
-
-                <div class="mission-part full-width">
-                    <h4>Compétences & AC Mobilisés</h4>
-                    <div class="tags">
-                        <span class="tag">RÉSEAU (AC 1.2)</span>
-                        <span class="tag">SÉCURITÉ (AC 2.1)</span>
-                    </div>
-                    <p class="justification">
-                        <em>Justification :</em> Cette mission m'a permis de valider l'AC "Administrer un réseau" car j'ai dû configurer les switchs de niveau 3 en autonomie.
-                    </p>
-                </div>
-
-                <div class="mission-part full-width highlight-bg">
-                    <h4>Traces & Preuves</h4>
-                    <p>Voici les éléments tangibles de mon travail :</p>
-                    <ul class="proof-list">
-                        <li>📄 Documentation technique rédigée</li>
-                        <li>⚙️ Screenshots des configurations CLI</li>
-                        <li>📧 Mail de validation du tuteur</li>
-                    </ul>
-                    </div>
-
-                <div class="mission-analysis full-width">
-                    <h4>🔍 Analyse Réflexive & Auto-évaluation</h4>
-                    <div class="analysis-grid">
-                        <div class="analysis-item success">
-                            <strong>Ce que j'ai appris :</strong>
-                            <p>[Ex: J'ai compris l'importance du nommage des ports pour le dépannage futur.]</p>
-                        </div>
-                        <div class="analysis-item challenge">
-                            <strong>Difficultés & Solutions :</strong>
-                            <p>[Ex: Difficulté sur le routage inter-vlan, résolue en relisant la doc constructeur.]</p>
-                        </div>
-                        <div class="analysis-item level">
-                            <strong>Niveau de maîtrise :</strong>
-                            <p>⭐⭐⭐☆ (Autonomie partielle)</p>
-                        </div>
+    <main>
+        <section id="accueil" class="section-hero">
+            <div class="container hero-wrapper">
+                <div class="hero-content">
+                    <span class="badge">Portfolio Alternance 202X</span>
+                    <h1>Développer le réseau de demain.</h1>
+                    <p class="hero-subtitle">Étudiant en BUT Réseaux & Télécommunications — Parcours [Ta Spécialité]</p>
+                    <div class="hero-description">
+                        <p><strong>Objectif de ce portfolio :</strong> Illustrer ma progression professionnelle. Ce support remplace le rapport classique et met en lumière la manière dont j'articule les apprentissages de l'IUT avec la réalité du terrain en entreprise.</p>
                     </div>
                 </div>
+                <div class="hero-image-container">
+                    <img src="https://via.placeholder.com/400x450" alt="Portrait de [Ton Nom]" class="hero-img">
+                    <div class="img-backdrop"></div>
+                </div>
             </div>
-        </article>
-
         </section>
 
-    <section id="bilan" class="container">
-        <h2 class="section-title">Synthèse Semestrielle par Compétence</h2>
-        
-        <div class="skills-table-container">
-            <table class="skills-table">
-                <thead>
-                    <tr>
-                        <th>Compétence BUT</th>
-                        <th>Apport de l'IUT</th>
-                        <th>Apport de l'Entreprise</th>
-                        <th>Complémentarité & Progrès</th>
-                        <th>Niveau atteint</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Administrer les réseaux</strong></td>
-                        <td>Bases théoriques (OSI, IP), TP sur simulateurs.</td>
-                        <td>Mise en production réelle, gestion des incidents utilisateurs.</td>
-                        <td>L'entreprise m'a forcé à être plus rigoureux (impact réel). Axe de progrès : Scripting.</td>
-                        <td><span class="level-badge high">Confirmé</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Connecter / Télécoms</strong></td>
-                        <td>Étude des signaux, fibre optique.</td>
-                        <td>Utilisation de soudeuse fibre sur chantier.</td>
-                        <td>La théorie m'a aidé à comprendre l'atténuation mesurée sur le terrain.</td>
-                        <td><span class="level-badge medium">Intermédiaire</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Programmer / Dev</strong></td>
-                        <td>Python, Bash.</td>
-                        <td>Peu sollicité pour l'instant.</td>
-                        <td>Axe de progrès majeur pour le semestre prochain : automatiser les tâches.</td>
-                        <td><span class="level-badge low">Débutant</span></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
+        <section id="entreprise" class="section-light">
+            <div class="container">
+                <h2 class="section-title">Environnement Professionnel</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">🏢</div>
+                        <h3>L'Entreprise</h3>
+                        <p><strong>Nom :</strong> [Nom de l'entreprise]</p>
+                        <p><strong>Secteur :</strong> [Ex: Intégrateur de solutions IT]</p>
+                        <p><strong>Envergure :</strong> [Ex: 200 collaborateurs, rayonnement national]</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🎯</div>
+                        <h3>Mon Rôle</h3>
+                        <p><strong>Service :</strong> [Ex: DSI - Pôle Infrastructure]</p>
+                        <p><strong>Missions :</strong> [Ex: Maintien en condition opérationnelle et assistance utilisateur de niveau 2].</p>
+                        <p><strong>Évolution :</strong> Gain d'autonomie progressif sur la gestion des tickets critiques.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🚀</div>
+                        <h3>Projet Professionnel</h3>
+                        <p>Cette expérience conforte mon ambition de devenir <strong>[Métier visé]</strong>. L'entreprise m'offre un cadre idéal pour développer mes compétences en [Compétence clé].</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <footer>
-        <p>&copy; 2024 - Portfolio BUT R&T - [Ton Nom]</p>
-        <p>Réalisé dans le cadre de l'alternance</p>
+        <section id="missions" class="section-white">
+            <div class="container">
+                <h2 class="section-title">Missions Significatives</h2>
+                
+                <article class="mission-card">
+                    <div class="mission-header">
+                        <div class="mission-title-group">
+                            <h3>Migration de l'architecture VLAN (Site distant)</h3>
+                            <span class="mission-date">Mai - Juin 202X</span>
+                        </div>
+                    </div>
+
+                    <div class="mission-body">
+                        <div class="mission-column">
+                            <h4>Contexte & Objectifs</h4>
+                            <p>Dans le cadre de la modernisation du réseau, le site de [Ville] nécessitait une refonte complète de son adressage et de ses VLANs pour isoler le trafic VoIP du trafic Data.</p>
+                            
+                            <h4>Déroulé & Tâches</h4>
+                            <ul class="task-list">
+                                <li>Cartographie du réseau existant.</li>
+                                <li>Création du plan d'adressage IP.</li>
+                                <li>Configuration des commutateurs (Cisco Catalyst).</li>
+                                <li>Recette technique avec les utilisateurs.</li>
+                            </ul>
+                        </div>
+
+                        <div class="mission-column bg-gray rounded-box">
+                            <h4>Apprentissages Critiques (AC)</h4>
+                            <div class="tags">
+                                <span class="tag">AC11.1 - Architecture Locale</span>
+                                <span class="tag">AC11.3 - Paramétrage Équipements</span>
+                            </div>
+
+                            <h4>Analyse Réflexive</h4>
+                            <p><strong>Acquis :</strong> J'ai compris l'importance d'une procédure de rollback (retour en arrière) en cas d'échec lors d'une mise en production.</p>
+                            <p><strong>Difficultés :</strong> Une boucle de routage a ralenti le réseau lors des premiers tests. J'ai dû analyser les trames avec Wireshark pour isoler le problème.</p>
+                            <p><strong>Autoévaluation :</strong> Je me sens désormais autonome sur la configuration de niveau 2, mais je dois encore me perfectionner sur le diagnostic à chaud.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mission-footer">
+                        <h4>Traces & Livrables</h4>
+                        <p class="trace-text">Schéma topologique validé par le DSI et extraits de configuration (disponibles sur demande).</p>
+                    </div>
+                </article>
+                </div>
+        </section>
+
+        <section id="bilan" class="section-light">
+            <div class="container">
+                <h2 class="section-title">Synthèse des Compétences</h2>
+                <p class="section-intro">Cette analyse croisée permet de mesurer l'impact de mon alternance sur la validation des compétences du référentiel BUT.</p>
+
+                <div class="table-container">
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Compétence BUT R&T</th>
+                                <th>Apports Théoriques (IUT)</th>
+                                <th>Mise en Pratique (Entreprise)</th>
+                                <th>Axes de Progression</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Administrer les réseaux</strong><br><em>(Compétence 1)</em></td>
+                                <td>Protocoles de routage dynamique (OSPF), concepts IPv6.</td>
+                                <td>Déploiement sur du matériel réel, gestion des interruptions de service.</td>
+                                <td>Améliorer ma rapidité d'exécution en ligne de commande (CLI).</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Connecter les entreprises</strong><br><em>(Compétence 2)</em></td>
+                                <td>Théorie des liaisons WAN et fibres optiques.</td>
+                                <td>Supervision des liens opérateurs via Centreon.</td>
+                                <td>Approfondir mes connaissances sur les technologies SD-WAN.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>© 2026 - Portfolio Professionnel de [Ton Nom] | BUT Réseaux & Télécommunications</p>
+        </div>
     </footer>
 
 </body>
 </html>
-
-
