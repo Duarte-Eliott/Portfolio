@@ -314,6 +314,7 @@ h1, h2, h3, h4 {
     width: 100%;
     border-collapse: collapse;
     min-width: 800px;
+    font-size: 1.1rem;
 }
 
 .styled-table thead tr {
@@ -322,8 +323,12 @@ h1, h2, h3, h4 {
     text-align: left;
 }
 
+.styled-table th {
+    font-size: 1.2rem;
+}
+
 .styled-table th, .styled-table td {
-    padding: 15px 20px;
+    padding: 25px 30px;
 }
 
 /* --- NOUVEAUTÉS POUR LE MULTIPAGE (MISSIONS) --- */
