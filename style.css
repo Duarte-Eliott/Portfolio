@@ -138,9 +138,16 @@ h1, h2, h3, h4 {
 }
 
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 2.3rem;
     margin-bottom: 15px;
     letter-spacing: -1px;
+}
+
+.specialization-text {
+    color: var(--accent-color);
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: normal;
 }
 
 .hero-subtitle {
@@ -210,6 +217,17 @@ h1, h2, h3, h4 {
 .card h3 {
     margin-bottom: 15px;
     font-size: 1.2rem;
+}
+
+/* Liens pour les cartes entreprise et poste */
+a.card-link {
+    text-decoration: none;
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+}
+a.card-link .read-more {
+    margin-top: auto;
 }
 
 /* 3. MISSIONS */
