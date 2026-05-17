@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mission 1 : Migration VLAN | Portfolio</title>
+    <title>Mission 2 : Plan de Reprise d'Activité | Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,7 +12,7 @@
     <header class="main-header">
         <div class="container nav-container">
             <div class="logo">
-                <span class="logo-name">Duarte Eliott</span><span class="logo-dot">.</span>
+                <span class="logo-name">Eliott Duarte</span><span class="logo-dot">.</span>
             </div>
             <nav>
                 <ul class="nav-links">
@@ -28,62 +28,94 @@
 
             <article class="mission-detail-card">
                 <header class="mission-detail-header">
-                    <span class="mission-date">Période : 01/04/2026 - 09/2026 </span>
-                    <h1>PRA : Un plan de reprise d'activité </h1>
+                    <span class="mission-date">Période : avril 2026 – septembre 2026</span>
+                    <h1>PRA – Plan de Reprise d'Activité</h1>
                     <div class="tags">
-                        <span class="tag">Configuration Système </span>
-                        <span class="tag">Paramétrage Équipements</span>
+                        <span class="tag">Virtualisation</span>
+                        <span class="tag">Continuité de service</span>
+                        <span class="tag">Cybersécurité</span>
                     </div>
                 </header>
 
                 <div class="mission-detail-body">
                     <div class="content-block">
-                        <h2>1. Contexte & Objectifs</h2>
-                        <p>L’infrastructure système du groupe est majoritairement hébergée à l’extérieur (chez OVH). L’objectif est de mettre en place un Plan de Reprise d’Activité (PRA) au siège de l’entreprise (Sainte-Mère-Église) afin de garantir un temps d’interruption minimal en cas de sinistre chez l’hébergeur.
-Ce projet cible prioritairement les processus cruciaux de l’entreprise, en particulier l’ERP (Odoo). </p>
-                        <p><strong>Contraintes :</strong> Réalisation du projet avec un faible budget et en s’adaptant aux contraintes actuelles sur le matériel, notamment la mémoire vive (RAM).</p>
+                        <h2>1. Contexte &amp; objectifs</h2>
+                        <p>L'infrastructure système du groupe est majoritairement hébergée à l'extérieur (chez OVH). L'objectif est de mettre en place un Plan de Reprise d'Activité (PRA) au siège de l'entreprise (Sainte-Mère-Église) afin de garantir un temps d'interruption minimal en cas de sinistre chez l'hébergeur. Ce projet cible prioritairement les processus cruciaux de l'entreprise, en particulier l'ERP <strong>Odoo</strong>.</p>
+                        <p><strong>Acteurs impliqués :</strong> responsable infrastructure (tuteur), DSI, [À COMPLÉTER : utilisateurs métiers Odoo pour les tests de bascule].</p>
+                        <p><strong>Contraintes :</strong> budget restreint, réutilisation du matériel existant au siège (notamment limitation de mémoire vive), bascule transparente côté utilisateurs.</p>
                     </div>
 
                     <div class="content-block">
-                        <h2>2. Déroulé & Tâches réalisées</h2>
+                        <h2>2. Tâches réalisées &amp; évolution</h2>
                         <ul class="task-list">
-                            <li><strong>Tâches 1 :</strong> Audit sur le matériel présent au siège et optimisation potentielle (matérielle).</li>
-                            <li><strong>Tâches 2 :</strong> Remise en état du matériel, mise à jour et amélioration de la configuration matérielle.</li>
-                            <li><strong>Tâches 3 :</strong> Installation et test de compatibilité d'un hyperviseur (Proxmox).</li>
-                            <li><strong>Tâches 4 :</strong> Déploiement via des sauvegardes de l'infrastructure de chez OVH.</li>
-                            <li><strong>Tâches 5 :</strong> Tests de de déplouement en production et des perfomance globales.</li>
+                            <li><strong>Étape 1 – Audit matériel :</strong> inventaire des serveurs disponibles au siège, identification des optimisations matérielles possibles (RAM, disques).</li>
+                            <li><strong>Étape 2 – Remise en état :</strong> mises à jour firmware, nettoyage, amélioration de la configuration matérielle.</li>
+                            <li><strong>Étape 3 – Installation de l'hyperviseur :</strong> installation de Proxmox et tests de compatibilité avec le matériel disponible.</li>
+                            <li><strong>Étape 4 – Restauration depuis OVH :</strong> rapatriement des sauvegardes de l'infrastructure OVH et déploiement des VM critiques sur Proxmox.</li>
+                            <li><strong>Étape 5 – Tests de bascule :</strong> tests de déploiement en conditions de production et mesure des performances globales avant validation.</li>
                         </ul>
                     </div>
 
+                    <div class="content-block">
+                        <h2>3. Compétences &amp; apprentissages critiques mobilisés</h2>
+                        <p>Cette mission est particulièrement riche : elle mobilise les compétences RT1 (virtualisation), RT3 (administration de données) et surtout la compétence Cybersécurité (continuité de service).</p>
+
+                        <div class="competence-mini">
+                            <p><span class="ac-tag">RT1</span> <strong>Administrer les réseaux et l'Internet</strong> – Niveau 2</p>
+                            <div class="ac-tag-row">
+                                <span class="ac-tag" title="Déployer des postes clients et solutions virtualisées">AC21.03</span>
+                                <span class="ac-tag" title="Déployer des services réseaux avancés">AC21.04</span>
+                            </div>
+                            <p><em>Justification :</em> mise en œuvre d'un hyperviseur (Proxmox) et déploiement de VM critiques sur l'infrastructure du siège.</p>
+                        </div>
+
+                        <div class="competence-mini">
+                            <p><span class="ac-tag">RT3</span> <strong>Créer des outils et applications</strong> – Niveau 2</p>
+                            <div class="ac-tag-row">
+                                <span class="ac-tag" title="Installer, administrer un système de gestion de données">AC23.04</span>
+                            </div>
+                            <p><em>Justification :</em> restauration et exploitation des sauvegardes Odoo (ERP) sur la nouvelle infrastructure de secours.</p>
+                        </div>
+
+                        <div class="competence-mini">
+                            <p><span class="ac-tag">Cyber</span> <strong>Administrer un SI sécurisé</strong> – Niveau 1</p>
+                            <div class="ac-tag-row">
+                                <span class="ac-tag" title="Connaître et utiliser les bonnes pratiques de cybersécurité">AC24.01</span>
+                                <span class="ac-tag" title="Mettre en œuvre les outils fondamentaux de sécurisation">AC24.02</span>
+                                <span class="ac-tag" title="Sécuriser les services">AC24.03</span>
+                            </div>
+                            <p><em>Justification :</em> un PRA est une brique fondamentale de la cybersécurité (disponibilité). Le projet m'a fait travailler la sécurisation des sauvegardes, l'isolation du site de secours et la définition des procédures de bascule.</p>
+                        </div>
+                    </div>
+
                     <div class="content-block bg-gray rounded-box">
-                        <h2>3. Analyse Réflexive & Autoévaluation</h2>
-                        <p><strong>Ce que j'ai appris :</strong> J'ai consolidé mes compétences en virtualisation avec le déploiement et l'administration de l'hyperviseur Proxmox. J'ai surtout pris conscience des enjeux métiers liés à la continuité de service et appris à orchestrer concrètement un PRA en restaurant une infrastructure distante (OVH) sur du matériel local.</p>
-                        <p><strong>Difficultés rencontrées :</strong> Le principal défi technique a été de faire fonctionner des services critiques gourmands en ressources (comme l'ERP Odoo) sur un matériel avec une quantité de mémoire vive (RAM) très limitée, pour respecter les contraintes budgétaires. Il a également fallu adapter les configurations des sauvegardes OVH pour les intégrer au réseau local du siège de manière transparente.</p>
-                        <p><strong>Positionnement personnel :</strong> Je suis fier d'avoir mené à bien ce projet crucial pour l'entreprise, de la phase d'audit matériel jusqu'aux tests de bascule en production. Je me sens désormais autonome sur la mise en place d'une solution de virtualisation. Mon prochain objectif serait d'automatiser les processus de test de restauration pour garantir la fiabilité continue du PRA.</p>
+                        <h2>4. Analyse réflexive &amp; autoévaluation</h2>
+                        <p><strong>Ce que j'ai appris :</strong> j'ai consolidé mes compétences en virtualisation avec le déploiement et l'administration de l'hyperviseur Proxmox. J'ai surtout pris conscience des enjeux métiers liés à la continuité de service et appris à orchestrer concrètement un PRA en restaurant une infrastructure distante (OVH) sur du matériel local.</p>
+                        <p><strong>Difficultés rencontrées :</strong> le principal défi technique a été de faire fonctionner des services critiques gourmands en ressources (comme l'ERP Odoo) sur un matériel avec une quantité de mémoire vive très limitée, pour respecter les contraintes budgétaires. Il a également fallu adapter les configurations des sauvegardes OVH pour les intégrer au réseau local du siège de manière transparente.</p>
+                        <p><strong>Comment je les ai surmontées :</strong> [À COMPLÉTER : ex. priorisation des VM essentielles, ajustement fin des paramètres mémoire des VM, tests itératifs avec le tuteur.]</p>
+                        <p><strong>Positionnement personnel :</strong> je suis fier d'avoir mené à bien ce projet crucial pour l'entreprise, de la phase d'audit matériel jusqu'aux tests de bascule en production. Je me sens désormais autonome sur la mise en place d'une solution de virtualisation. Mon prochain objectif serait d'automatiser les processus de test de restauration pour garantir la fiabilité continue du PRA.</p>
                     </div>
 
                     <div class="content-block">
-                        <h2>4. Traces & Preuves</h2>
-                        <p>Voici quelques illustrations de la mise en place du Plan de Reprise d'Activité :</p>
-                        
+                        <h2>5. Traces &amp; preuves</h2>
+                        <p>Illustrations des étapes clés du projet PRA. Chaque trace a été choisie pour illustrer concrètement un apprentissage critique.</p>
+
                         <div class="cards-grid">
                             <div class="proof-container" style="margin: 0;">
-                                <img src="photo1.jpg" alt="Preuve 1 - Audit matériel" style="max-width: 100%; height: auto; border-radius: 4px;">
-                                <p class="caption">1. Auditserveur au siège.</p>
+                                <img src="photo1.jpg" alt="Preuve 1 - Audit du serveur au siège" style="max-width: 100%; height: auto; border-radius: 4px;">
+                                <p class="caption"><strong>1. Audit du serveur au siège.</strong> Illustre AC22.05 (capacité à questionner un cahier des charges) : analyse de l'existant avant proposition technique.</p>
                             </div>
 
                             <div class="proof-container" style="margin: 0;">
-                                <img src="photo2.jpg" alt="Preuve 2 - Hyperviseur Proxmox" style="max-width: 100%; height: auto; border-radius: 4px;">
-                                <p class="caption">2. amélioration de la configuration matérielle.</p>
+                                <img src="photo2.jpg" alt="Preuve 2 - Amélioration de la configuration matérielle" style="max-width: 100%; height: auto; border-radius: 4px;">
+                                <p class="caption"><strong>2. Amélioration de la configuration matérielle.</strong> Illustre AC21.03 (préparer une plate-forme adaptée à la virtualisation).</p>
                             </div>
 
                             <div class="proof-container" style="margin: 0;">
-                                <img src="photo3.jpg" alt="Preuve 3 - Déploiement Odoo" style="max-width: 100%; height: auto; border-radius: 4px;">
-                                <p class="caption">3. Mise à jour du serveur et déploiement de Proxmox</p>
+                                <img src="photo3.jpg" alt="Preuve 3 - Déploiement de Proxmox" style="max-width: 100%; height: auto; border-radius: 4px;">
+                                <p class="caption"><strong>3. Mise à jour du serveur et déploiement de Proxmox.</strong> Illustre AC21.04 (déployer des services réseaux avancés) et AC24.02 (outils de sécurisation de l'infrastructure).</p>
                             </div>
                         </div>
-                        
-                        <p> </p>
                     </div>
                 </div>
             </article>
@@ -92,7 +124,7 @@ Ce projet cible prioritairement les processus cruciaux de l’entreprise, en par
 
     <footer class="main-footer">
         <div class="container">
-            <p>© 2026 - Portfolio Professionnel de Eliott DUARTE</p>
+            <p>© 2026 - Portfolio Professionnel de Eliott Duarte</p>
         </div>
     </footer>
 

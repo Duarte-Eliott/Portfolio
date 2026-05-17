@@ -219,15 +219,260 @@ h1, h2, h3, h4 {
     font-size: 1.2rem;
 }
 
-/* Liens pour les cartes entreprise et poste */
-a.card-link {
+/* Cartes entreprise et poste */
+.card-link {
     text-decoration: none;
     color: var(--primary-color);
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
-a.card-link .read-more {
+.card-link .read-more {
     margin-top: auto;
+}
+
+/* MODALES */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.modal {
+    background: var(--bg-white);
+    border-radius: var(--radius);
+    max-width: 700px;
+    width: 100%;
+    max-height: 85vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    animation: modalIn 0.25s ease;
+}
+
+@keyframes modalIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.modal-header {
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+    padding: 40px 50px 30px;
+    position: relative;
+}
+
+.modal-header h2 {
+    color: var(--bg-white);
+    font-size: 1.8rem;
+    margin: 8px 0 15px;
+}
+
+.modal-header .mission-date {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    background: none;
+    border: none;
+    color: #94a3b8;
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 1;
+    transition: color 0.2s;
+}
+
+.modal-close:hover {
+    color: var(--bg-white);
+}
+
+.modal-body {
+    padding: 40px 50px;
+}
+
+/* TAGS APPRENTISSAGES CRITIQUES */
+.ac-tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 10px 0 18px;
+}
+
+.ac-tag {
+    display: inline-block;
+    padding: 3px 10px;
+    background-color: #e0f2fe;
+    color: var(--accent-color);
+    border: 1px solid #bae6fd;
+    border-radius: 14px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.2px;
+    cursor: help;
+}
+
+.mission-summary-card .ac-tag-row {
+    margin-top: auto;
+    margin-bottom: 12px;
+}
+
+/* BILAN PAR COMPETENCE */
+.competence-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 28px;
+    margin-top: 20px;
+}
+
+.competence-card {
+    background: var(--bg-white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.competence-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.competence-header {
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+    padding: 25px 28px 22px;
+}
+
+.competence-code {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--bg-white);
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.competence-header h3 {
+    color: var(--bg-white);
+    font-size: 1.25rem;
+    margin: 0 0 8px;
+}
+
+.competence-level {
+    display: block;
+    color: #cbd5e1;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+.competence-body {
+    padding: 25px 28px;
+    flex: 1;
+    font-size: 0.95rem;
+}
+
+.competence-body p {
+    margin-bottom: 12px;
+    color: var(--text-muted);
+}
+
+.competence-body a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.competence-body a:hover {
+    text-decoration: underline;
+}
+
+.competence-label {
+    color: var(--secondary-color) !important;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 16px !important;
+    margin-bottom: 6px !important;
+}
+
+.competence-label:first-child {
+    margin-top: 0 !important;
+}
+
+/* BLOC AC AU SEIN D'UNE MISSION */
+.competence-mini {
+    background-color: var(--bg-light);
+    border-left: 3px solid var(--accent-color);
+    padding: 18px 22px;
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 18px;
+}
+
+.competence-mini p {
+    margin-bottom: 8px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.competence-mini p:first-child {
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.competence-mini em {
+    color: var(--secondary-color);
+}
+
+/* ENCART COMPLEMENTARITE */
+.complementarite-box {
+    margin-top: 50px;
+    background: var(--bg-white);
+    border-left: 4px solid var(--accent-color);
+    padding: 30px 35px;
+    border-radius: 0 var(--radius) var(--radius) 0;
+    box-shadow: var(--shadow-sm);
+}
+
+.complementarite-box h3 {
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+.complementarite-box p {
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+/* FOOTER */
+.main-footer {
+    background-color: var(--primary-color);
+    color: #cbd5e1;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.9rem;
 }
 
 /* 3. MISSIONS */

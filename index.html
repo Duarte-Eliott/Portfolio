@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Professionnel | BUT R&T</title>
+    <title>Portfolio Professionnel | BUT R&T - Eliott Duarte</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
@@ -14,15 +14,15 @@
     <header class="main-header">
         <div class="container nav-container">
             <div class="logo">
-                <span class="logo-name">Duarte Eliott</span><span class="logo-dot">.</span>
+                <span class="logo-name">Eliott Duarte</span><span class="logo-dot">.</span>
             </div>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#accueil">Présentation</a></li>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#entreprise">L'Entreprise</a></li>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#entreprise">Entreprise</a></li>
                     <li><a href="#missions">Missions</a></li>
-                    <li><a href="#bilan">Bilan Compétences</a></li>
+                    <li><a href="#bilan">Bilan par compétence</a></li>
+                    <li><a href="#projection">Projection</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,16 +32,19 @@
         <section id="accueil" class="section-hero">
             <div class="container hero-wrapper">
                 <div class="hero-content">
-                    <span class="badge">Portfolio Alternance 2026</span>
-                    <h1>Étudiant en BUT Réseaux & Télécommunications<br><span class="specialization-text">Parcours cybersécurité</span></h1>
-                    <p class="hero-subtitle">Développer le réseau de demain. </p>
+                    <span class="badge">Portfolio Alternance 2025 - 2026</span>
+                    <h1>Eliott Duarte<br><span class="specialization-text">BUT Réseaux & Télécommunications – Parcours Cybersécurité</span></h1>
+                    <p class="hero-subtitle">Développer et sécuriser le réseau de demain.</p>
                     <div class="hero-description">
-                        <p><strong>Objectif de ce portfolio :</strong> Illustrer ma progression professionnelle en articulant les apprentissages de l'IUT avec la réalité du terrain en entreprise.</p>
+                        <p><strong>Finalité de ce portfolio :</strong> Documenter mon alternance d'Administrateur Systèmes & Réseaux chez F2F Groupe, analyser les missions réalisées au regard du référentiel BUT R&T, et démontrer la progression de mes compétences au croisement de la formation à l'IUT de Caen et du terrain en entreprise.</p>
                     </div>
+                    <p style="margin-top:20px; color: var(--text-muted); font-size: 0.95rem;">
+                        <strong>Centres d'intérêt professionnels :</strong> [À COMPLÉTER : ex. cybersécurité défensive, virtualisation, automatisation, réseaux opérateurs…]
+                    </p>
                 </div>
                 <div class="hero-image-container">
                     <div style="position: relative; width: 80%; height: 400px;">
-                        <img src="portrait.jpg" alt="Portrait" class="hero-img" style="background:#e2e8f0; width: 100%; height: 100%; display:block; object-fit:cover;">
+                        <img src="portrait.jpg" alt="Portrait d'Eliott Duarte, étudiant BUT R&T" class="hero-img" style="background:#e2e8f0; width: 100%; height: 100%; display:block; object-fit:cover;">
                         <div class="img-backdrop"></div>
                     </div>
                 </div>
@@ -53,10 +56,10 @@
                 <h2 class="section-title">À propos de moi</h2>
                 <div style="max-width: 800px; margin: -30px auto 0 auto; text-align: justify;">
                     <p>
-                        Actuellement étudiant en BUT Réseaux & Télécommunications avec une spécialisation en cybersécurité, je suis passionné par la résolution de problèmes complexes et la sécurisation des infrastructures informatiques. Ma curiosité naturelle me pousse à explorer constamment de nouvelles technologies et à approfondir ma compréhension des systèmes existants.
+                        Actuellement étudiant en BUT Réseaux & Télécommunications avec une spécialisation en cybersécurité à l'IUT de Caen, je suis passionné par la résolution de problèmes complexes et la sécurisation des infrastructures informatiques. Ma curiosité naturelle me pousse à explorer constamment de nouvelles technologies et à approfondir ma compréhension des systèmes existants.
                     </p>
                     <p style="margin-top: 1.5em;">
-                        Rigoureux et méthodique, j'aborde chaque projet avec une attention particulière aux détails, que ce soit pour diagnostiquer une panne, déployer une nouvelle solution ou renforcer la sécurité d'un réseau. Mon objectif est de mettre mes compétences au service d'une entreprise pour contribuer à la robustesse et à la performance de son système d'information.
+                        Rigoureux et méthodique, j'aborde chaque projet avec une attention particulière aux détails, que ce soit pour diagnostiquer une panne, déployer une nouvelle solution ou renforcer la sécurité d'un réseau. Mon alternance chez F2F Groupe me permet de confronter au quotidien les apprentissages théoriques de l'IUT à la réalité d'un système d'information multisite.
                     </p>
                 </div>
             </div>
@@ -65,22 +68,24 @@
         <section id="entreprise" class="section-light">
             <div class="container">
                 <h2 class="section-title">Environnement Professionnel</h2>
+                <p class="section-intro">Découvrez l'entreprise qui m'accueille en alternance et le poste que j'y occupe. Cliquez sur une carte pour ouvrir la fiche détaillée.</p>
                 <div class="cards-grid">
-                    <a href="entreprise.html" class="card card-link">
+                    <div class="card card-link" onclick="openModal('modal-entreprise')" role="button" tabindex="0">
                         <div class="card-icon">🏢</div>
                         <h3>L'Entreprise</h3>
                         <p><strong>Nom :</strong> F2F Groupe</p>
-                        <p><strong>Secteur :</strong> Eau</p>
+                        <p><strong>Secteur :</strong> Eau et environnement</p>
                         <p><strong>Envergure :</strong> Groupe multisociété international d'environ 250 personnes</p>
                         <span class="read-more">En savoir plus &rarr;</span>
-                    </a>
-                    <a href="poste.html" class="card card-link">
+                    </div>
+                    <div class="card card-link" onclick="openModal('modal-poste')" role="button" tabindex="0">
                         <div class="card-icon">🎯</div>
-                        <h3>Administrateur systèmes réseaux</h3>
-                        <p><strong>Service :</strong> SI - Pôle Infrastructure</p>
-                        <p>Gain d'autonomie progressif sur la gestion des incidents.</p>
+                        <h3>Mon poste</h3>
+                        <p><strong>Intitulé :</strong> Alternant Administrateur Systèmes & Réseaux</p>
+                        <p><strong>Service :</strong> SI – Pôle Infrastructure</p>
+                        <p>Support utilisateurs, gestion de parc, projets d'infrastructure.</p>
                         <span class="read-more">En savoir plus &rarr;</span>
-                    </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -88,27 +93,30 @@
         <section id="missions" class="section-white">
             <div class="container">
                 <h2 class="section-title">Missions Significatives</h2>
-                <p class="section-intro">Cliquez sur une mission pour accéder au détail (contexte, tâches, preuves et analyse réflexive).</p>
-                
+                <p class="section-intro">Chaque mission est analysée selon la structure du référentiel R&T : contexte, tâches, compétences et apprentissages critiques mobilisés, traces, analyse réflexive.</p>
+
                 <div class="mission-grid">
                     <a href="mission1.html" class="mission-summary-card">
-                        <span class="mission-date">En Continue</span>
+                        <span class="mission-date">En continu</span>
                         <h3>Support Infrastructure</h3>
                         <p>Assistance technique aux utilisateurs, préparation des postes de travail et déploiement de la migration vers Windows 11.</p>
+                        <div class="ac-tag-row">
+                            <span class="ac-tag">RT1</span>
+                            <span class="ac-tag">RT2</span>
+                            <span class="ac-tag">Cyber</span>
+                        </div>
                         <span class="read-more">Voir le détail &rarr;</span>
                     </a>
 
                     <a href="mission2.html" class="mission-summary-card">
-                        <span class="mission-date">Période : 01/04/2026 - 09/2026 </span>
-                        <h3>PRA : Un plan de reprise d'activité</h3>
-                        <p>Mise en place d'un Plan de Reprise d'Activité pour garantir la continuité des opérations en cas de sinistre.</p>
-                        <span class="read-more">Voir le détail &rarr;</span>
-                    </a>
-
-                    <a href="mission3.html" class="mission-summary-card">
-                        <span class="mission-date">Nov - Déc 202X</span>
-                        <h3>exemple</h3>
-                        <p>Intégration de nouveaux équipements réseau dans l'outil de supervision et création d'alertes personnalisées.</p>
+                        <span class="mission-date">Avril 2026 – Septembre 2026</span>
+                        <h3>PRA – Plan de Reprise d'Activité</h3>
+                        <p>Mise en place d'un Plan de Reprise d'Activité au siège pour garantir la continuité des opérations en cas de sinistre chez l'hébergeur.</p>
+                        <div class="ac-tag-row">
+                            <span class="ac-tag">RT1</span>
+                            <span class="ac-tag">RT3</span>
+                            <span class="ac-tag">Cyber</span>
+                        </div>
                         <span class="read-more">Voir le détail &rarr;</span>
                     </a>
                 </div>
@@ -117,34 +125,121 @@
 
         <section id="bilan" class="section-light">
             <div class="container">
-                <h2 class="section-title">Synthèse des Compétences</h2>
-                <div class="table-container">
-                    <table class="styled-table">
-                        <thead>
-                            <tr>
-                                <th>Compétence</th>
-                                <th>Mise en Pratique Entreprise</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>Gestion des accès</strong></td>
-                                <td>Administratation des comptes utilisateurs et des permissions.</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Connecter les entreprises et les usagers</strong></td>
-                                <td>Support infrastructure et réseaux.</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Déployer des outils pour les utilisateurs</strong></td>
-                                <td>Installation de poste et configuration adaptée aux différents besoins.</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Administrer un système d'information </strong></td>
-                                <td>Mise en place d'un Plan de Reprise d'Activité (PRA).</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <h2 class="section-title">Bilan par compétence</h2>
+                <p class="section-intro">Synthèse de mes acquis sur les quatre compétences du référentiel BUT R&T (parcours Cybersécurité), au croisement des apprentissages IUT et de l'alternance.</p>
+
+                <div class="competence-grid">
+
+                    <article class="competence-card">
+                        <header class="competence-header">
+                            <span class="competence-code">RT1</span>
+                            <h3>Administrer les réseaux et l'Internet</h3>
+                            <span class="competence-level">Niveau 2 – Administrer un réseau</span>
+                        </header>
+                        <div class="competence-body">
+                            <p class="competence-label">Apprentissages critiques mobilisés :</p>
+                            <div class="ac-tag-row">
+                                <span class="ac-tag" title="Maîtriser les principes des systèmes d'exploitation">AC11.04</span>
+                                <span class="ac-tag" title="Installer un poste client">AC11.06</span>
+                                <span class="ac-tag" title="Déployer des postes clients et solutions virtualisées">AC21.03</span>
+                                <span class="ac-tag" title="Déployer des services réseaux avancés">AC21.04</span>
+                            </div>
+                            <p class="competence-label">Acquis IUT :</p>
+                            <p>Bases du réseau local, systèmes d'exploitation Windows/Linux, configuration d'équipements en TP.</p>
+                            <p class="competence-label">Acquis Entreprise :</p>
+                            <p>Préparation de postes en série, migration Windows 10 → 11 sur le parc, déploiement de l'hyperviseur Proxmox pour le PRA, gestion d'incidents quotidiens (cf. <a href="mission1.html">Support</a> &amp; <a href="mission2.html">PRA</a>).</p>
+                            <p class="competence-label">Axes de progrès :</p>
+                            <p>[À COMPLÉTER : ex. automatiser la préparation des postes via un script de mastering, monter en compétence sur le routage dynamique.]</p>
+                        </div>
+                    </article>
+
+                    <article class="competence-card">
+                        <header class="competence-header">
+                            <span class="competence-code">RT2</span>
+                            <h3>Connecter les entreprises et les usagers</h3>
+                            <span class="competence-level">Niveau 2 – Maîtriser les composantes des solutions de connexion</span>
+                        </header>
+                        <div class="competence-body">
+                            <p class="competence-label">Apprentissages critiques mobilisés :</p>
+                            <div class="ac-tag-row">
+                                <span class="ac-tag" title="Communiquer avec un tiers, adapter son discours">AC12.05</span>
+                                <span class="ac-tag" title="Mettre en place un accès distant sécurisé">AC22.02</span>
+                                <span class="ac-tag" title="Mettre en place une connexion multi-site">AC22.03</span>
+                            </div>
+                            <p class="competence-label">Acquis IUT :</p>
+                            <p>Notions de transmission, brassage en TP, principes des liens opérateurs.</p>
+                            <p class="competence-label">Acquis Entreprise :</p>
+                            <p>Communication quotidienne avec les utilisateurs (vulgarisation, accompagnement), prise en main à distance, [À COMPLÉTER : ex. participation à la gestion des VPN ou des liens inter-sites].</p>
+                            <p class="competence-label">Axes de progrès :</p>
+                            <p>[À COMPLÉTER : ex. approfondir la configuration des accès distants et la qualité de service.]</p>
+                        </div>
+                    </article>
+
+                    <article class="competence-card">
+                        <header class="competence-header">
+                            <span class="competence-code">RT3</span>
+                            <h3>Créer des outils et applications pour les R&T</h3>
+                            <span class="competence-level">Niveau 2 – Développer une application R&T</span>
+                        </header>
+                        <div class="competence-body">
+                            <p class="competence-label">Apprentissages critiques mobilisés :</p>
+                            <div class="ac-tag-row">
+                                <span class="ac-tag" title="Utiliser un système informatique et ses outils">AC13.01</span>
+                                <span class="ac-tag" title="Automatiser l'administration système avec des scripts">AC23.01</span>
+                                <span class="ac-tag" title="Installer, administrer un système de gestion de données">AC23.04</span>
+                            </div>
+                            <p class="competence-label">Acquis IUT :</p>
+                            <p>Programmation Python, bases de données, développement web, scripting.</p>
+                            <p class="competence-label">Acquis Entreprise :</p>
+                            <p>Restauration et administration des sauvegardes Odoo (ERP) dans le cadre du PRA, [À COMPLÉTER : ex. petits scripts d'inventaire ou d'automatisation rédigés].</p>
+                            <p class="competence-label">Axes de progrès :</p>
+                            <p>Compétence la moins exercée en entreprise. Objectif : produire au moins un script d'automatisation pour l'administration courante (provisioning, vérification de l'état des backups, etc.).</p>
+                        </div>
+                    </article>
+
+                    <article class="competence-card">
+                        <header class="competence-header">
+                            <span class="competence-code">Cyber</span>
+                            <h3>Administrer un système d'information sécurisé</h3>
+                            <span class="competence-level">Niveau 1 – Sensibiliser aux vulnérabilités et remédiations</span>
+                        </header>
+                        <div class="competence-body">
+                            <p class="competence-label">Apprentissages critiques mobilisés :</p>
+                            <div class="ac-tag-row">
+                                <span class="ac-tag" title="Connaître et utiliser les bonnes pratiques de cybersécurité">AC24.01</span>
+                                <span class="ac-tag" title="Mettre en œuvre les outils fondamentaux de sécurisation">AC24.02</span>
+                                <span class="ac-tag" title="Sécuriser les services">AC24.03</span>
+                                <span class="ac-tag" title="Administrer les protections contre les logiciels malveillants">AC25.01</span>
+                            </div>
+                            <p class="competence-label">Acquis IUT :</p>
+                            <p>Sensibilisation à l'hygiène informatique, bases de la cryptographie, types d'attaques courants, prise en main d'outils de test de pénétration.</p>
+                            <p class="competence-label">Acquis Entreprise :</p>
+                            <p>Mise en place d'un PRA = garantie de continuité (cf. <a href="mission2.html">Mission 2</a>), gestion des accès utilisateurs, application des bonnes pratiques au quotidien (prérequis TPM 2.0 pour Windows 11, etc.).</p>
+                            <p class="competence-label">Axes de progrès :</p>
+                            <p>[À COMPLÉTER : ex. mener une revue de sécurité formelle d'un service, approfondir la supervision sécurité.]</p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="complementarite-box">
+                    <h3>Complémentarité IUT ↔ Entreprise</h3>
+                    <p>L'IUT m'apporte un socle théorique structuré (modèles, protocoles, méthodologie) que l'entreprise me permet de <strong>confronter à un système d'information réel</strong>, avec ses contraintes budgétaires, organisationnelles et humaines. À l'inverse, les incidents et projets vécus chez F2F Groupe (PRA, migration W11, support) éclairent et donnent du sens aux ressources étudiées en cours. Cette articulation est ce qui me permet de progresser le plus rapidement sur les niveaux 2 des compétences RT1, RT2 et le niveau 1 de la compétence Cyber.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projection" class="section-white">
+            <div class="container">
+                <h2 class="section-title">Projection professionnelle</h2>
+                <div style="max-width: 850px; margin: -20px auto 0 auto;">
+                    <p><strong>Évolution observée au fil de l'année :</strong> [À COMPLÉTER : ex. au début de l'alternance je traitais essentiellement des tickets de support de niveau 1 sous supervision ; aujourd'hui je prends en charge des projets d'infrastructure (PRA) en autonomie et j'accompagne les nouveaux arrivants.]</p>
+
+                    <p style="margin-top: 1.5em;"><strong>Métier(s) visé(s) à terme :</strong> [À COMPLÉTER : ex. Administrateur Systèmes & Réseaux, puis Ingénieur Cybersécurité / Analyste SOC après une éventuelle poursuite d'études.]</p>
+
+                    <p style="margin-top: 1.5em;"><strong>Compétences à développer en priorité :</strong> [À COMPLÉTER : ex. automatisation (Ansible, scripts PowerShell), supervision (Zabbix / Grafana), durcissement d'un AD, analyse forensique de base.]</p>
+
+                    <p style="margin-top: 1.5em;"><strong>Suite envisagée :</strong> [À COMPLÉTER : ex. poursuivre en BUT 3 parcours Cybersécurité, puis éventuellement Master / école d'ingénieur spécialisée.]</p>
                 </div>
             </div>
         </section>
@@ -152,8 +247,128 @@
 
     <footer class="main-footer">
         <div class="container">
-            <p>© 2026 - Portfolio Professionnel de Duarte Eliott</p>
+            <p>© 2026 - Portfolio Professionnel de Eliott Duarte</p>
         </div>
     </footer>
+
+    <!-- Modal Entreprise -->
+    <div id="modal-entreprise" class="modal-overlay" onclick="closeModalOnOverlay(event, this)" aria-modal="true" role="dialog">
+        <div class="modal">
+            <div class="modal-header">
+                <span class="mission-date">Secteur : Eau et environnement</span>
+                <h2>F2F Groupe</h2>
+                <div class="tags">
+                    <span class="tag">International</span>
+                    <span class="tag">Multisociété</span>
+                    <span class="tag">~250 collaborateurs</span>
+                </div>
+                <button class="modal-close" onclick="closeModal('modal-entreprise')" aria-label="Fermer">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="content-block">
+                    <h2>1. Présentation du Groupe</h2>
+                    <p>F2F Groupe est un acteur du secteur de l'eau et de l'environnement. Avec une présence à l'international et un effectif d'environ 250 personnes, le groupe rassemble plusieurs sociétés spécialisées pour offrir des solutions complètes à ses clients.</p>
+                    <p><strong>Activité principale :</strong> [À COMPLÉTER : description précise de l'activité du groupe – ex. traitement de l'eau, équipements industriels, ingénierie environnementale…]</p>
+                    <p><strong>Implantation :</strong> Siège à [À COMPLÉTER : ex. Sainte-Mère-Église], filiales en [À COMPLÉTER : pays / régions].</p>
+                </div>
+
+                <div class="content-block bg-gray rounded-box">
+                    <h2>2. Organisation interne &amp; positionnement du service</h2>
+                    <p>Je suis intégré au <strong>service Système d'Information (SI), Pôle Infrastructure</strong>, basé au siège du groupe. Ce service est responsable du maintien en condition opérationnelle de l'infrastructure partagée entre les différentes sociétés du groupe.</p>
+                    <p><strong>Structure du service SI :</strong> [À COMPLÉTER : ex. 1 DSI, 1 responsable infrastructure (mon tuteur), 2 administrateurs, 1 alternant (moi). Adapter selon la réalité.]</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>3. Missions principales confiées</h2>
+                    <ul class="task-list">
+                        <li>Support de proximité aux utilisateurs du groupe (résolution d'incidents, accompagnement).</li>
+                        <li>Préparation des équipements et des accès pour les nouveaux arrivants.</li>
+                        <li>Migration progressive du parc Windows 10 vers Windows 11.</li>
+                        <li>Conception et mise en place du Plan de Reprise d'Activité au siège.</li>
+                        <li>[À COMPLÉTER : autres missions ponctuelles confiées au cours de l'année.]</li>
+                    </ul>
+                </div>
+
+                <div class="content-block bg-gray rounded-box">
+                    <h2>4. Évolution observée au fil de l'année</h2>
+                    <p>[À COMPLÉTER : ex. premiers mois consacrés à l'observation et au support de niveau 1 ; à partir de [mois], prise en charge de tâches plus autonomes (préparation de postes, gestion des accès) ; à partir d'avril 2026, pilotage du projet PRA en quasi-autonomie sous validation du tuteur.]</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>5. Lien avec mon projet professionnel</h2>
+                    <p>Cette alternance me permet de [À COMPLÉTER : ex. confronter mes apprentissages cybersécurité à un SI réel, découvrir la dimension multisite d'une infrastructure, etc.]. Elle conforte mon souhait de m'orienter vers [À COMPLÉTER : métier / domaine visé].</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Poste -->
+    <div id="modal-poste" class="modal-overlay" onclick="closeModalOnOverlay(event, this)" aria-modal="true" role="dialog">
+        <div class="modal">
+            <div class="modal-header">
+                <span class="mission-date">Service : SI – Pôle Infrastructure</span>
+                <h2>Alternant Administrateur Systèmes &amp; Réseaux</h2>
+                <div class="tags">
+                    <span class="tag">Support Utilisateurs</span>
+                    <span class="tag">Maintien en condition opérationnelle</span>
+                    <span class="tag">Projets d'infrastructure</span>
+                </div>
+                <button class="modal-close" onclick="closeModal('modal-poste')" aria-label="Fermer">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="content-block">
+                    <h2>1. Description du poste</h2>
+                    <p>En tant qu'alternant Administrateur Systèmes &amp; Réseaux, j'accompagne le Pôle Infrastructure dans la gestion quotidienne du système d'information de F2F Groupe. Mon rôle inclut la résolution des incidents, le support de proximité aux utilisateurs et la participation active aux projets d'évolution de l'infrastructure.</p>
+                </div>
+
+                <div class="content-block bg-gray rounded-box">
+                    <h2>2. Outils &amp; environnement technique</h2>
+                    <ul class="task-list">
+                        <li><strong>Systèmes &amp; virtualisation :</strong> Windows 10/11, Windows Server, Proxmox.</li>
+                        <li><strong>Réseaux :</strong> brassage, gestion des accès, configuration des équipements.</li>
+                        <li><strong>Support :</strong> outils de ticketing et de prise en main à distance.</li>
+                        <li><strong>Hébergement / sauvegardes :</strong> infrastructure OVH, ERP Odoo.</li>
+                        <li>[À COMPLÉTER : autres outils précis – ex. nom de la solution de ticketing, antivirus, etc.]</li>
+                    </ul>
+                </div>
+
+                <div class="content-block">
+                    <h2>3. Niveau de responsabilité</h2>
+                    <p>Sous la supervision de mon tuteur [À COMPLÉTER : nom &amp; fonction du tuteur], j'interviens en autonomie sur le support de niveau 1 et la préparation des postes. Pour les projets d'infrastructure (PRA, migration W11), je propose les solutions techniques et les fais valider avant déploiement en production.</p>
+                </div>
+
+                <div class="content-block bg-gray rounded-box">
+                    <h2>4. Évolution de mon autonomie</h2>
+                    <p>[À COMPLÉTER : ex. au début je sollicitais systématiquement mon tuteur pour chaque incident ; aujourd'hui je traite seul environ X tickets par semaine et je n'escalade que les cas critiques. Sur les projets, je suis passé d'un rôle d'exécution à un rôle de proposition.]</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>5. Projection professionnelle</h2>
+                    <p>Ce poste me permet de construire un profil polyvalent (système, réseau, support, sécurité). À l'issue du BUT, je souhaite [À COMPLÉTER : ex. évoluer vers un poste d'Administrateur Systèmes &amp; Réseaux confirmé, puis me spécialiser en cybersécurité défensive].</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal(id) {
+            document.getElementById(id).classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        function closeModalOnOverlay(e, overlay) {
+            if (e.target === overlay) closeModal(overlay.id);
+        }
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.modal-overlay.active').forEach(function(m) {
+                    closeModal(m.id);
+                });
+            }
+        });
+    </script>
 </body>
 </html>
