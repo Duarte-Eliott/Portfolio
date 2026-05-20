@@ -727,3 +727,225 @@ h1, h2, h3, h4 {
     margin-top: 10px;
     font-style: italic;
 }
+
+/* ORG CHART */
+.org-chart-wrap {
+    overflow-x: auto;
+    padding: 10px 0 20px;
+}
+
+.org-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 480px;
+}
+
+.org-root-box {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+.org-v-connector {
+    width: 2px;
+    height: 22px;
+    background: #94a3b8;
+}
+
+.org-children {
+    display: flex;
+    gap: 0;
+}
+
+.org-child {
+    position: relative;
+    padding: 22px 8px 0;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.org-child::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #94a3b8;
+}
+
+.org-child:first-child::before { left: 50%; }
+.org-child:last-child::before  { right: 50%; }
+
+.org-child::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 22px;
+    background: #94a3b8;
+}
+
+.org-child-box {
+    background: #fff;
+    border: 1.5px solid var(--border-color);
+    border-top: 3px solid var(--accent-color);
+    border-radius: 6px;
+    padding: 10px 12px;
+    text-align: center;
+    min-width: 88px;
+}
+
+.org-child-box strong {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.78rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.org-child-box small {
+    display: block;
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+    font-style: italic;
+}
+
+/* FAITS CLÉS GRID */
+.kf-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.kf-item {
+    background: var(--bg-light);
+    border-radius: 8px;
+    padding: 14px 18px;
+    border-left: 3px solid var(--accent-color);
+}
+
+.kf-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-weight: 700;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+}
+
+.kf-value {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* FILIALES GRID */
+.filiales-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 12px;
+}
+
+.filiale-card {
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 16px 12px;
+    text-align: center;
+}
+
+.filiale-name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 0.88rem;
+    color: var(--primary-color);
+    letter-spacing: 0.5px;
+}
+
+.filiale-tag {
+    display: inline-block;
+    margin: 6px auto 8px;
+    padding: 2px 8px;
+    background: #e0f2fe;
+    color: var(--accent-color);
+    border-radius: 12px;
+    font-size: 0.68rem;
+    font-weight: 600;
+}
+
+.filiale-desc {
+    font-size: 0.77rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
+/* ACTIVITÉS PILLS */
+.activite-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.activite-list li {
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-size: 0.84rem;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+/* USINES SIMOP */
+.usines-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+}
+
+.usine-card {
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.usine-header {
+    background: var(--primary-color);
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.usine-lieu {
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.88rem;
+}
+
+.usine-effectif {
+    color: #94a3b8;
+    font-size: 0.75rem;
+}
+
+.usine-card .task-list {
+    padding: 14px 16px 14px 34px;
+}

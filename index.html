@@ -71,15 +71,15 @@
                 <p class="section-intro">Découvrez l'entreprise qui m'accueille en alternance et le poste que j'y occupe. Cliquez sur une carte pour ouvrir la fiche détaillée.</p>
                 <div class="cards-grid">
                     <div class="card card-link" onclick="openModal('modal-entreprise')" role="button" tabindex="0">
-                        <div class="card-icon">🏢</div>
+                        <div class="card-icon"></div>
                         <h3>L'Entreprise</h3>
                         <p><strong>Nom :</strong> F2F Groupe</p>
-                        <p><strong>Secteur :</strong> Eau et environnement</p>
-                        <p><strong>Envergure :</strong> Groupe multisociété international d'environ 250 personnes</p>
+                        <p><strong>Secteur :</strong> Traitement de l'eau &amp; assainissement</p>
+                        <p><strong>Envergure :</strong> 5 filiales, ~250 collaborateurs — France, Espagne, Slovaquie, Outre-mer</p>
                         <span class="read-more">En savoir plus &rarr;</span>
                     </div>
                     <div class="card card-link" onclick="openModal('modal-poste')" role="button" tabindex="0">
-                        <div class="card-icon">🎯</div>
+                        <div class="card-icon"></div>
                         <h3>Mon poste</h3>
                         <p><strong>Intitulé :</strong> Alternant Administrateur Systèmes & Réseaux</p>
                         <p><strong>Service :</strong> SI – Pôle Infrastructure</p>
@@ -255,49 +255,127 @@
     <div id="modal-entreprise" class="modal-overlay" onclick="closeModalOnOverlay(event, this)" aria-modal="true" role="dialog">
         <div class="modal">
             <div class="modal-header">
-                <span class="mission-date">Secteur : Eau et environnement</span>
+                <span class="mission-date">Secteur : Traitement de l'eau &amp; assainissement</span>
                 <h2>F2F Groupe</h2>
                 <div class="tags">
-                    <span class="tag">International</span>
-                    <span class="tag">Multisociété</span>
+                    <span class="tag">Sainte-Mère-Église, Normandie</span>
                     <span class="tag">~250 collaborateurs</span>
+                    <span class="tag">France · Espagne · Slovaquie · Outre-mer</span>
                 </div>
                 <button class="modal-close" onclick="closeModal('modal-entreprise')" aria-label="Fermer">&times;</button>
             </div>
             <div class="modal-body">
-                <div class="content-block">
-                    <h2>1. Présentation du Groupe</h2>
-                    <p>F2F Groupe est un acteur du secteur de l'eau et de l'environnement. Avec une présence à l'international et un effectif d'environ 250 personnes, le groupe rassemble plusieurs sociétés spécialisées pour offrir des solutions complètes à ses clients.</p>
-                    <p><strong>Activité principale :</strong> [À COMPLÉTER : description précise de l'activité du groupe – ex. traitement de l'eau, équipements industriels, ingénierie environnementale…]</p>
-                    <p><strong>Implantation :</strong> Siège à [À COMPLÉTER : ex. Sainte-Mère-Église], filiales en [À COMPLÉTER : pays / régions].</p>
-                </div>
-
-                <div class="content-block bg-gray rounded-box">
-                    <h2>2. Organisation interne &amp; positionnement du service</h2>
-                    <p>Je suis intégré au <strong>service Système d'Information (SI), Pôle Infrastructure</strong>, basé au siège du groupe. Ce service est responsable du maintien en condition opérationnelle de l'infrastructure partagée entre les différentes sociétés du groupe.</p>
-                    <p><strong>Structure du service SI :</strong> [À COMPLÉTER : ex. 1 DSI, 1 responsable infrastructure (mon tuteur), 2 administrateurs, 1 alternant (moi). Adapter selon la réalité.]</p>
-                </div>
 
                 <div class="content-block">
-                    <h2>3. Missions principales confiées</h2>
-                    <ul class="task-list">
-                        <li>Support de proximité aux utilisateurs du groupe (résolution d'incidents, accompagnement).</li>
-                        <li>Préparation des équipements et des accès pour les nouveaux arrivants.</li>
-                        <li>Migration progressive du parc Windows 10 vers Windows 11.</li>
-                        <li>Conception et mise en place du Plan de Reprise d'Activité au siège.</li>
-                        <li>[À COMPLÉTER : autres missions ponctuelles confiées au cours de l'année.]</li>
+                    <h2>Présentation</h2>
+                    <p>F2F Groupe est un groupe industriel européen spécialisé dans le <strong>traitement de l'eau et l'assainissement</strong>. Fondé et basé à Sainte-Mère-Église en Normandie, il regroupe cinq filiales complémentaires qui couvrent l'ensemble de la chaîne : fabrication d'équipements, gestion des eaux pluviales et sanitaires, maintenance de stations, jusqu'aux solutions clés en main pour les particuliers.</p>
+                    <div class="kf-grid" style="margin-top: 18px;">
+                        <div class="kf-item">
+                            <div class="kf-label">Siège</div>
+                            <div class="kf-value">Sainte-Mère-Église (Normandie)</div>
+                        </div>
+                        <div class="kf-item">
+                            <div class="kf-label">Implantation</div>
+                            <div class="kf-value">France, Espagne, Slovaquie, Outre-mer</div>
+                        </div>
+                        <div class="kf-item">
+                            <div class="kf-label">Effectif</div>
+                            <div class="kf-value">~250 collaborateurs</div>
+                        </div>
+                        <div class="kf-item">
+                            <div class="kf-label">Activités</div>
+                            <div class="kf-value">Assainissement, eaux pluviales &amp; sanitaires, maintenance</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>Structure du groupe</h2>
+                    <p style="margin-bottom: 16px; color: var(--text-muted); font-size: 0.93rem;">Le groupe s'organise autour d'une holding qui chapeaute cinq filiales aux métiers complémentaires :</p>
+                    <div class="org-chart-wrap">
+                        <div class="org-chart">
+                            <div class="org-root-box">F2F GROUPE</div>
+                            <div class="org-v-connector"></div>
+                            <div class="org-children">
+                                <div class="org-child">
+                                    <div class="org-child-box">
+                                        <strong>SIMOP</strong>
+                                        <small>Fabrication</small>
+                                    </div>
+                                </div>
+                                <div class="org-child">
+                                    <div class="org-child-box">
+                                        <strong>HYDREAL</strong>
+                                        <small>Pluvial</small>
+                                    </div>
+                                </div>
+                                <div class="org-child">
+                                    <div class="org-child-box">
+                                        <strong>ASSISTEAUX</strong>
+                                        <small>Maintenance</small>
+                                    </div>
+                                </div>
+                                <div class="org-child">
+                                    <div class="org-child-box">
+                                        <strong>EAUTECH</strong>
+                                        <small>Eaux sanitaires</small>
+                                    </div>
+                                </div>
+                                <div class="org-child">
+                                    <div class="org-child-box">
+                                        <strong>RAINEA</strong>
+                                        <small>Particulier</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="task-list" style="margin-top: 22px;">
+                        <li><strong>SIMOP</strong> — Fabricant d'équipements pour l'assainissement non collectif et le traitement des eaux.</li>
+                        <li><strong>HYDREAL</strong> — Solutions de gestion des eaux pluviales et d'assainissement non collectif.</li>
+                        <li><strong>ASSISTEAUX</strong> — Maintenance et exploitation de stations de traitement des eaux sanitaires et industrielles.</li>
+                        <li><strong>EAUTECH</strong> — Spécialiste des installations et services liés aux eaux sanitaires.</li>
+                        <li><strong>RAINEA</strong> — Réseau franchise dédié aux particuliers : assainissement individuel et récupération d'eau de pluie.</li>
                     </ul>
                 </div>
 
-                <div class="content-block bg-gray rounded-box">
-                    <h2>4. Évolution observée au fil de l'année</h2>
-                    <p>[À COMPLÉTER : ex. premiers mois consacrés à l'observation et au support de niveau 1 ; à partir de [mois], prise en charge de tâches plus autonomes (préparation de postes, gestion des accès) ; à partir d'avril 2026, pilotage du projet PRA en quasi-autonomie sous validation du tuteur.]</p>
+                <div class="content-block">
+                    <h2>Les sites de production SIMOP</h2>
+                    <p style="color: var(--text-muted); font-size: 0.93rem; margin-bottom: 18px;">SIMOP dispose de <strong>5 sites de production</strong> en France et à l'international, tous spécialisés dans le rotomoulage et la fabrication d'équipements d'assainissement.</p>
+                    <div class="usines-grid">
+                        <div class="usine-card">
+                            <div class="usine-header">
+                                <span class="usine-lieu">Le Ham — Manche (50)</span>
+                                <span class="usine-effectif">Rotomoulage polyéthylène · CNC</span>
+                            </div>
+                        </div>
+                        <div class="usine-card">
+                            <div class="usine-header">
+                                <span class="usine-lieu">Montdidier — Somme (80)</span>
+                                <span class="usine-effectif">Rotomoulage · Enroulement polyester</span>
+                            </div>
+                        </div>
+                        <div class="usine-card">
+                            <div class="usine-header">
+                                <span class="usine-lieu">Bujaraloz — Espagne</span>
+                                <span class="usine-effectif">Rotomoulage · ~40 collaborateurs</span>
+                            </div>
+                        </div>
+                        <div class="usine-card">
+                            <div class="usine-header">
+                                <span class="usine-lieu">Slovaquie</span>
+                                <span class="usine-effectif">Rotomoulage · Métallerie (depuis 2005)</span>
+                            </div>
+                        </div>
+                        <div class="usine-card">
+                            <div class="usine-header">
+                                <span class="usine-lieu">Antilles — Guadeloupe &amp; Martinique</span>
+                                <span class="usine-effectif">Production locale (depuis 1997)</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="content-block">
-                    <h2>5. Lien avec mon projet professionnel</h2>
-                    <p>Cette alternance me permet de [À COMPLÉTER : ex. confronter mes apprentissages cybersécurité à un SI réel, découvrir la dimension multisite d'une infrastructure, etc.]. Elle conforte mon souhait de m'orienter vers [À COMPLÉTER : métier / domaine visé].</p>
-                </div>
             </div>
         </div>
     </div>
