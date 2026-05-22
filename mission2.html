@@ -29,7 +29,7 @@
             <article class="mission-detail-card">
                 <header class="mission-detail-header">
                     <span class="mission-date">Période : avril 2026 – septembre 2026</span>
-                    <h1>PRA – Plan de Reprise d'Activité</h1>
+                    <h1>PRA : Plan de Reprise d'Activité</h1>
                     <div class="tags">
                         <span class="tag">Virtualisation</span>
                         <span class="tag">Continuité de service</span>
@@ -40,52 +40,43 @@
                 <div class="mission-detail-body">
                     <div class="content-block">
                         <h2>1. Contexte &amp; objectifs</h2>
-                        <p>L'infrastructure système du groupe est majoritairement hébergée à l'extérieur (chez OVH). L'objectif est de mettre en place un Plan de Reprise d'Activité (PRA) au siège de l'entreprise (Sainte-Mère-Église) afin de garantir un temps d'interruption minimal en cas de sinistre chez l'hébergeur. Ce projet cible prioritairement les processus cruciaux de l'entreprise, en particulier l'ERP <strong>Odoo</strong>.</p>
-                        <p><strong>Acteurs impliqués :</strong> responsable infrastructure (tuteur), DSI, [À COMPLÉTER : utilisateurs métiers Odoo pour les tests de bascule].</p>
+                        <p>L'infrastructure système du groupe est majoritairement hébergée à l'extérieur (chez OVH). L'objectif est de mettre en place un Plan de Reprise d'Activité (PRA) au siège de l'entreprise (Sainte-Mère-Église) afin de garantir un temps d'interruption minimal en cas de problème chez l'hébergeur. Ce projet cible prioritairement les processus cruciaux de l'entreprise, en particulier l'ERP <strong>Odoo</strong>.</p>
                         <p><strong>Contraintes :</strong> budget restreint, réutilisation du matériel existant au siège (notamment limitation de mémoire vive), bascule transparente côté utilisateurs.</p>
                     </div>
 
                     <div class="content-block">
                         <h2>2. Tâches réalisées &amp; évolution</h2>
                         <ul class="task-list">
-                            <li><strong>Étape 1 – Audit matériel :</strong> inventaire des serveurs disponibles au siège, identification des optimisations matérielles possibles (RAM, disques).</li>
-                            <li><strong>Étape 2 – Remise en état :</strong> mises à jour firmware, nettoyage, amélioration de la configuration matérielle.</li>
-                            <li><strong>Étape 3 – Installation de l'hyperviseur :</strong> installation de Proxmox et tests de compatibilité avec le matériel disponible.</li>
-                            <li><strong>Étape 4 – Restauration depuis OVH :</strong> rapatriement des sauvegardes de l'infrastructure OVH et déploiement des VM critiques sur Proxmox.</li>
-                            <li><strong>Étape 5 – Tests de bascule :</strong> tests de déploiement en conditions de production et mesure des performances globales avant validation.</li>
+                            <li><strong>Étape 1 : Audit matériel :</strong> inventaire des serveurs disponibles au siège, identification des optimisations matérielles possibles (RAM, disques).</li>
+                            <li><strong>Étape 2 : Remise en état :</strong> mises à jour firmware, nettoyage, amélioration de la configuration matérielle.</li>
+                            <li><strong>Étape 3 : Installation de l'hyperviseur :</strong> installation de Proxmox et tests de compatibilité avec le matériel.</li>
+                            <li><strong>Étape 4 : Restauration depuis OVH :</strong> rapatriement automatique des sauvegardes de l'infrastructure OVH et déploiement des VM sur Proxmox.</li>
+                            <li><strong>Étape 5 : Tests de bascule :</strong> tests de déploiement en conditions et mesure des performances.</li>
                         </ul>
                     </div>
 
                     <div class="content-block">
-                        <h2>3. Compétences &amp; apprentissages critiques mobilisés</h2>
-                        <p>Cette mission est particulièrement riche : elle mobilise les compétences RT1 (virtualisation), RT3 (administration de données) et surtout la compétence Cybersécurité (continuité de service).</p>
+                        <h2>3. Compétences &amp; apprentissages mobilisés</h2>
+                        <p>Cette mission mobilise les compétences RT1 (virtualisation et continuité de service), RT3 (administration de données) .</p>
 
                         <div class="competence-mini">
-                            <p><span class="ac-tag">RT1</span> <strong>Administrer les réseaux et l'Internet</strong> – Niveau 2</p>
+                            <p><span class="ac-tag">RT1</span> <strong>Administrer les réseaux et l'Internet</strong> </p>
                             <div class="ac-tag-row">
                                 <span class="ac-tag" title="Déployer des postes clients et solutions virtualisées">AC21.03</span>
                                 <span class="ac-tag" title="Déployer des services réseaux avancés">AC21.04</span>
                             </div>
-                            <p><em>Justification :</em> mise en œuvre d'un hyperviseur (Proxmox) et déploiement de VM critiques sur l'infrastructure du siège.</p>
+                            <p><em>Justification :</em> mise en œuvre d'un hyperviseur (Proxmox) et déploiement de VM critiques sur l'infrastructure du siège et la définition des procédures de bascule.</p>
                         </div>
 
                         <div class="competence-mini">
-                            <p><span class="ac-tag">RT3</span> <strong>Créer des outils et applications</strong> – Niveau 2</p>
+                            <p><span class="ac-tag">RT3</span> <strong>Créer des outils et applications</strong> </p>
                             <div class="ac-tag-row">
                                 <span class="ac-tag" title="Installer, administrer un système de gestion de données">AC23.04</span>
                             </div>
                             <p><em>Justification :</em> restauration et exploitation des sauvegardes Odoo (ERP) sur la nouvelle infrastructure de secours.</p>
                         </div>
 
-                        <div class="competence-mini">
-                            <p><span class="ac-tag">Cyber</span> <strong>Administrer un SI sécurisé</strong> – Niveau 1</p>
-                            <div class="ac-tag-row">
-                                <span class="ac-tag" title="Connaître et utiliser les bonnes pratiques de cybersécurité">AC24.01</span>
-                                <span class="ac-tag" title="Mettre en œuvre les outils fondamentaux de sécurisation">AC24.02</span>
-                                <span class="ac-tag" title="Sécuriser les services">AC24.03</span>
-                            </div>
-                            <p><em>Justification :</em> un PRA est une brique fondamentale de la cybersécurité (disponibilité). Le projet m'a fait travailler la sécurisation des sauvegardes, l'isolation du site de secours et la définition des procédures de bascule.</p>
-                        </div>
+                    
                     </div>
 
                     <div class="content-block bg-gray rounded-box">
