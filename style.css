@@ -217,6 +217,38 @@ h1, h2, h3, h4 {
     text-transform: uppercase;
 }
 
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.status-in-progress {
+    background-color: #FFF4E0;
+    color: #B8730F;
+    border: 1px solid #E8A93A;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #E8A93A;
+    animation: pulse-dot 1.6s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.2); }
+}
+
 .hero-content h1 {
     font-size: 2.4rem;
     margin-bottom: 15px;
@@ -304,8 +336,26 @@ h1, h2, h3, h4 {
 }
 
 .card-icon {
-    font-size: 2rem;
-    margin-bottom: 15px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover .card-icon {
+    box-shadow: var(--shadow-md);
+}
+
+.card-icon svg {
+    width: 28px;
+    height: 28px;
+    fill: #fff;
 }
 
 /* Logo F2F dans la carte entreprise */

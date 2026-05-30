@@ -28,6 +28,9 @@
 
             <article class="mission-detail-card">
                 <header class="mission-detail-header">
+                    <span class="status-badge status-in-progress">
+                        <span class="status-dot"></span> Mission en cours
+                    </span>
                     <span class="mission-date">Période : avril 2026 : septembre 2026</span>
                     <h1>PRA : Plan de Reprise d'Activité</h1>
                     <div class="tags">
@@ -81,10 +84,10 @@
 
                     <div class="content-block bg-gray rounded-box">
                         <h2>4. Analyse réflexive &amp; autoévaluation</h2>
-                        <p><strong>Ce que j'ai appris :</strong> j'ai consolidé mes compétences en virtualisation avec le déploiement et l'administration de l'hyperviseur Proxmox. J'ai surtout pris conscience des enjeux métiers liés à la continuité de service et appris à orchestrer concrètement un PRA en restaurant une infrastructure distante (OVH) sur du matériel local.</p>
-                        <p><strong>Difficultés rencontrées :</strong> le principal défi technique a été de faire fonctionner des services critiques gourmands en ressources (comme l'ERP Odoo) sur un matériel avec une quantité de mémoire vive très limitée, pour respecter les contraintes budgétaires. Il a également fallu adapter les configurations des sauvegardes OVH pour les intégrer au réseau local du siège de manière transparente.</p>
-                        <p><strong>Comment je les ai surmontées :</strong> [À COMPLÉTER : ex. priorisation des VM essentielles, ajustement fin des paramètres mémoire des VM, tests itératifs avec le tuteur.]</p>
-                        <p><strong>Positionnement personnel :</strong> je suis fier d'avoir mené à bien ce projet crucial pour l'entreprise, de la phase d'audit matériel jusqu'aux tests de bascule en production. Je me sens désormais autonome sur la mise en place d'une solution de virtualisation. Mon prochain objectif serait d'automatiser les processus de test de restauration pour garantir la fiabilité continue du PRA.</p>
+                        <p><strong>Ce que j'ai appris :</strong> à ce stade du projet, j'ai surtout monté en compétence sur la phase matérielle : auditer un serveur existant, identifier les composants à remplacer ou à mettre à niveau (mémoire vive, disques), réaliser les mises à jour firmware et la remise en état afin de disposer d'une plate-forme fiable et compatible avec l'hyperviseur Proxmox. J'ai également pris conscience des enjeux métiers liés à la continuité de service.</p>
+                        <p><strong>Difficultés rencontrées :</strong> le principal défi a été de remettre à niveau un matériel ancien tout en respectant les contraintes budgétaires (réutilisation de l'existant et amélioration avec un budget limité). Il a fallu vérifier la compatibilité des composants et m'assurer que la configuration matérielle serait suffisante pour accueillir l'hyperviseur Proxmox et, à terme, les services critiques comme l'ERP Odoo.</p>
+                        <p><strong>Comment je les ai surmontées :</strong> j'ai procédé étape par étape : inventaire précis de l'existant, comparaison des performances (benchmark CPU) pour valider le dimensionnement, puis mises à jour firmware et amélioration de la configuration matérielle avant de passer à l'installation de l'hyperviseur.</p>
+                        <p><strong>Positionnement personnel :</strong> j'ai terminé la phase d'audit et de remise en état du serveur, qui est désormais à jour et prêt à recevoir l'hyperviseur. Je me sens à l'aise sur la préparation d'une plate-forme de virtualisation. Ma prochaine étape est l'installation de Proxmox, puis la restauration des sauvegardes OVH et les tests de bascule.</p>
                     </div>
 
                     <div class="content-block">
@@ -93,22 +96,23 @@
 
                         <div class="cards-grid">
                             <div class="proof-container" style="margin: 0;">
-                                <img src="photo1.jpg" alt="Preuve 1 - Audit du serveur au siège" style="max-width: 100%; height: auto; border-radius: 4px;">
+                                <img src="images/mission2/photo1.jpg" alt="Preuve 1 - Audit du serveur au siège" style="max-width: 100%; height: auto; border-radius: 4px;">
                                 <p class="caption"><strong>1. Audit du serveur au siège.</strong> Illustre AC22.05 (capacité à questionner un cahier des charges) : analyse de l'existant avant proposition technique.</p>
                             </div>
 
                             <div class="proof-container" style="margin: 0;">
-                                <img src="photo2.jpg" alt="Preuve 2 - Amélioration de la configuration matérielle" style="max-width: 100%; height: auto; border-radius: 4px;">
-                                <p class="caption"><strong>2. Amélioration de la configuration matérielle.</strong> Illustre AC21.03 (préparer une plate-forme adaptée à la virtualisation).</p>
+                                <img src="images/mission2/cpu.png" alt="Preuve 2 - Benchmark CPU" style="max-width: 100%; height: auto; border-radius: 4px;">
+                                <p class="caption"><strong>2. Benchmark CPU.</strong> Comparaison des performances du processeur pour valider le dimensionnement matériel. Illustre AC21.03 (préparer une plate-forme adaptée à la virtualisation).</p>
                             </div>
 
                             <div class="proof-container" style="margin: 0;">
-                                <img src="photo3.jpg" alt="Preuve 3 - Mise à jour du serveur" style="max-width: 100%; height: auto; border-radius: 4px;">
-                                <p class="caption"><strong>3. Mise à jour du serveur.</strong> Illustre AC21.04 (déployer des services réseaux avancés) et AC21.03 (déployer des solutions virtualisées).</p>
+                                <img src="images/mission2/photo2.jpg" alt="Preuve 3 - Amélioration de la configuration matérielle" style="max-width: 100%; height: auto; border-radius: 4px;">
+                                <p class="caption"><strong>3. Amélioration de la configuration matérielle.</strong> Illustre AC21.03 (préparer une plate-forme adaptée à la virtualisation).</p>
                             </div>
+
                             <div class="proof-container" style="margin: 0;">
-                                <img src="photo4.jpg" alt="Preuve 4 - Déploiement de Proxmox et test de performance" style="max-width: 100%; height: auto; border-radius: 4px;">
-                                <p class="caption"><strong>4. Déploiement de Proxmox et test de performance.</strong> Illustre AC21.04 (déployer des services réseaux avancés) et AC21.03 (déployer des solutions virtualisées).</p>
+                                <img src="images/mission2/photo3.jpg" alt="Preuve 4 - Mise à jour du serveur" style="max-width: 100%; height: auto; border-radius: 4px;">
+                                <p class="caption"><strong>4. Mise à jour du serveur.</strong> Illustre AC21.04 (déployer des services réseaux avancés) et AC21.03 (déployer des solutions virtualisées).</p>
                             </div>
                         </div>
                     </div>

@@ -1,7 +1,16 @@
 {
   "permissions": {
     "allow": [
-      "Bash(start \"\" \"c:\\\\Users\\\\duart\\\\Desktop\\\\port\\\\Portfolio\\\\index.html\")"
+      "Bash(start \"\" \"c:\\\\Users\\\\duart\\\\Desktop\\\\port\\\\Portfolio\\\\index.html\")",
+      "Bash(mkdir -p images/index images/mission1 images/mission2 images/mission3)",
+      "Bash(mv portrait.jpg F2F.jpg images/index/)",
+      "Bash(mv img6.png img4.png img5.jpg images/mission1/)",
+      "Bash(mv photo1.jpg cpu.png photo2.jpg photo3.jpg images/mission2/)",
+      "Bash(mv w11.png ad.png N2F.png 3cx.png drive.png meet.png images/mission3/)",
+      "Bash(sed -i 's#src=\"portrait.jpg\"#src=\"images/index/portrait.jpg\"#g; s#src=\"F2F.jpg\"#src=\"images/index/F2F.jpg\"#g' index.html)",
+      "Bash(sed -i 's#src=\"img6.png\"#src=\"images/mission1/img6.png\"#g; s#src=\"img4.png\"#src=\"images/mission1/img4.png\"#g; s#src=\"img5.jpg\"#src=\"images/mission1/img5.jpg\"#g' mission1.html)",
+      "Bash(sed -i 's#src=\"photo1.jpg\"#src=\"images/mission2/photo1.jpg\"#g; s#src=\"cpu.png\"#src=\"images/mission2/cpu.png\"#g; s#src=\"photo2.jpg\"#src=\"images/mission2/photo2.jpg\"#g; s#src=\"photo3.jpg\"#src=\"images/mission2/photo3.jpg\"#g' mission2.html)",
+      "Bash(sed -i 's#src=\"w11.png\"#src=\"images/mission3/w11.png\"#g; s#src=\"ad.png\"#src=\"images/mission3/ad.png\"#g; s#src=\"N2F.png\"#src=\"images/mission3/N2F.png\"#g; s#src=\"3cx.png\"#src=\"images/mission3/3cx.png\"#g; s#src=\"drive.png\"#src=\"images/mission3/drive.png\"#g; s#src=\"meet.png\"#src=\"images/mission3/meet.png\"#g' mission3.html)"
     ]
   }
 }
