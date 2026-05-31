@@ -10,7 +10,9 @@
       "Bash(sed -i 's#src=\"portrait.jpg\"#src=\"images/index/portrait.jpg\"#g; s#src=\"F2F.jpg\"#src=\"images/index/F2F.jpg\"#g' index.html)",
       "Bash(sed -i 's#src=\"img6.png\"#src=\"images/mission1/img6.png\"#g; s#src=\"img4.png\"#src=\"images/mission1/img4.png\"#g; s#src=\"img5.jpg\"#src=\"images/mission1/img5.jpg\"#g' mission1.html)",
       "Bash(sed -i 's#src=\"photo1.jpg\"#src=\"images/mission2/photo1.jpg\"#g; s#src=\"cpu.png\"#src=\"images/mission2/cpu.png\"#g; s#src=\"photo2.jpg\"#src=\"images/mission2/photo2.jpg\"#g; s#src=\"photo3.jpg\"#src=\"images/mission2/photo3.jpg\"#g' mission2.html)",
-      "Bash(sed -i 's#src=\"w11.png\"#src=\"images/mission3/w11.png\"#g; s#src=\"ad.png\"#src=\"images/mission3/ad.png\"#g; s#src=\"N2F.png\"#src=\"images/mission3/N2F.png\"#g; s#src=\"3cx.png\"#src=\"images/mission3/3cx.png\"#g; s#src=\"drive.png\"#src=\"images/mission3/drive.png\"#g; s#src=\"meet.png\"#src=\"images/mission3/meet.png\"#g' mission3.html)"
+      "Bash(sed -i 's#src=\"w11.png\"#src=\"images/mission3/w11.png\"#g; s#src=\"ad.png\"#src=\"images/mission3/ad.png\"#g; s#src=\"N2F.png\"#src=\"images/mission3/N2F.png\"#g; s#src=\"3cx.png\"#src=\"images/mission3/3cx.png\"#g; s#src=\"drive.png\"#src=\"images/mission3/drive.png\"#g; s#src=\"meet.png\"#src=\"images/mission3/meet.png\"#g' mission3.html)",
+      "Bash(sed -i 's/&amp;/et/g' index.html mission1.html mission2.html mission3.html)",
+      "Bash(sed -i 's/R&T/RT/g; s/ & / et /g' index.html)"
     ]
   }
 }
